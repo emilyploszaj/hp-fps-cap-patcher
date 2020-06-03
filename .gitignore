@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+cap.so
+cap.dylib
+cap.dll
+cap.a
+cap.lib
+cap-test-*
+*.exe
+*.o
+*.obj
+*.lst
+*.dll

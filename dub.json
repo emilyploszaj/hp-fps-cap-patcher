@@ -1,0 +1,8 @@
+{
+	"name": "hp-fps-cap",
+	"authors": [
+		"Emily"
+	],
+	"description": "Patches the Engine.dll for a version of HP1 or HP2 to natively cap the frame rate to a provided value.",
+	"license": "mit"
+}
