@@ -16,3 +16,5 @@ This instruction loads a float stored at ``10474598`` to be returned from the fu
 ```DF 05 XX YY ZZ 10```
 
 This loads an integer stored at 10ZZYYXX. The address has to point to a desired integer value, and must already exist in the dll. Fortunately, every value from 0 to 255 is readily present in all versions of ``Engine.dll``. This address is generated from the ``.rdata`` segment of the provided dll on build.
+
+Several other patches are applied to display text by default (instead of when a debug flag was set), and set up related values so that this can be done correctly.
