@@ -4,7 +4,7 @@ The Harry Potter and the Philosopher's Stone and Harry Potter and the Chamber of
 A function in the Engine.dll file for HP1 and HP2 is called to get what to cap the frame rate at (``UGameEngine::GetMaxTickRate``) but returns 0, signifying no capping should be done. So this program modifies the dll to return a value that is not 0.
 
 ## Building
-hp-fps-cap-patcher is written in D and is built with dub, the standard package manager included with [dmd](https://dlang.org/download.html), D's reference compiler. The program expects an ``Engine.dll`` from either HP1 or HP2 in the root directory to use as a base, building a patched version in ``patched/Engine.dll``. The cap for FPS is prompted on build.
+hp-fps-cap-patcher is written in D and is built with dub, the standard package manager included with [dmd](https://dlang.org/download.html), D's reference compiler. The program expects an ``Engine.dll`` and a ``Render.dll`` from either HP1 or HP2 in the root directory to use as a base, building a patched version in ``patched/Engine.dll`` and ``patched/Render.dll``. The cap for FPS is prompted on build.
 
 ## Procedure
 This patch works by replacing the following instruction in ``Engine.dll``:
